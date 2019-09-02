@@ -75,13 +75,13 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     
     private func create3DModelNode(position: SCNVector3) -> SCNNode {
         let node = SCNNode()
-        let scene = SCNScene(named: "art.scnassets/perla_machine.scn")
+        let scene = SCNScene(named: "art.scnassets/perla_machine.dae")
         let nodeArray = scene!.rootNode.childNodes
         for childNode in nodeArray {
             node.addChildNode(childNode as SCNNode)
         }
         node.position = position
-        node.scale = SCNVector3Make(0.07, 0.07, 0.07)
+        node.scale = SCNVector3Make(0.05, 0.05, 0.05)
         return node
     }
 
