@@ -36,7 +36,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         if let configuration = worldConfiguration {
-            sceneView.debugOptions = .showFeaturePoints
+            // sceneView.debugOptions = .showFeaturePoints
             sceneView.session.run(configuration)
         }
     }
